@@ -7,6 +7,7 @@ import './screens/product_detail_screen.dart';
 import './screens/products_overview_screen.dart';
 import 'package:provider/provider.dart';
 import './screens/user_products_screen.dart';
+import './screens/edit_products_screen.dart';
 import 'providers/products.dart';
 
 void main() {
@@ -29,7 +30,6 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.purple,
           primaryColor: Colors.white,
           useMaterial3: true,
-          
         ),
         debugShowCheckedModeBanner: false,
         home: ProductsOverviewScreen(),
@@ -37,7 +37,8 @@ class MyApp extends StatelessWidget {
           ProductDetailScreen.routeName: (ctx) => ProductDetailScreen(),
           CartScreen.routeName: (ctx) => CartScreen(),
           OrdersScreen.routName: (ctx) => OrdersScreen(),
-          UserProductsScreen.routeName: (ctx)=> UserProductsScreen(),
+          UserProductsScreen.routeName: (ctx) => UserProductsScreen(),
+          EditProductsScreen.routeName: (ctx)=>EditProductsScreen(),
         },
       ),
     );
